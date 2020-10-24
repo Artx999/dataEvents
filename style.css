@@ -1,0 +1,113 @@
+:root {
+    --bg: white;
+    --struc: black;
+    --txt: white;
+}
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: var(--bg);
+    min-height: 100vh;
+}
+nav {
+    background-color: var(--struc);
+    height: 10vh; width: 100%;
+    position: fixed;
+    color: var(--txt);
+    z-index: 10;
+}
+#menu {
+    position: relative;
+    height: 100%; width: 10vh;
+    left: 3vw;
+}
+#menuIcon {
+    position: relative;
+    top: -1vh;
+    font-size: 10vh;
+}
+#menuDropDown {
+    position: absolute;
+    height: 90vh; width: 20vw;
+    background-color: var(--struc);
+    top: 10vh;
+}
+#menuDropDown ul {
+    list-style-type: none;
+}
+#menuDropDown ul li {
+    width: 100%;
+    margin: 10px 0;
+}
+#menuDropDown ul li a {
+    text-decoration: none;
+    position: relative;
+    left: -1em;
+    padding: 0.5em 10em 0 1em;
+    color: var(--txt);
+    border-bottom: white 1px solid;
+}
+#menuDropDown ul li a:hover {
+    background-color: darkgrey;
+}
+#logo {
+    height: 100%; width: 200px;
+    position: absolute;
+    top: 0;
+    margin: 0 calc(50vw - 100px);
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+#logoSvg {
+    margin: 1vh;
+    height: 8vh;
+}
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+header video {
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 1s opacity;
+}
+#h1Wrapper {
+    position: absolute;
+    top: 0;
+    height: 100vh; width: 100%;
+    display: flex;
+}
+header h1 {
+    display: block;
+    top: 50vh;
+    margin: auto;
+    z-index: 3;
+    color: var(--txt);
+    font-size: 3em;
+}
+main {
+    min-height: 100vh;
+}
+#weather {
+    position: relative;
+    display: block;
+    top: 10vh;
+    margin: auto;
+    width: 10vw;
+}
+footer {
+    position: relative;
+    background-color: var(--struc);
+    color: var(--txt);
+    height: 20vh;
+}
+footer h1 {
+    margin: 0;
+    padding-top: 10px;
+}
